@@ -63,9 +63,9 @@
 ## 🔐 설정 파일 분리 설계
 
 본 프로젝트는 실무 환경을 고려하여  
-**Spring Boot 설정 파일을 public / secret으로 분리하여 관리했습니다.**
+**Spring Boot 설정 파일을 public / 기본으로 분리하여 관리했습니다.**
 
-이는 GitHub에 민감 정보(DB 비밀번호, OAuth2 Client Secret 등)가  
+이는 GitHub에 민감 정보(DB 비밀번호, OAuth2 Client등)가  
 노출되는 것을 방지하고,  
 협업 및 배포 환경에서 설정 충돌을 최소화하기 위함입니다.
 
@@ -96,7 +96,7 @@ text
 - 서버 포트
 - JPA 설정
 - 로깅 레벨
-application-secret.yml
+application.yml
 Git에 포함되지 않음
 
 민감 정보 관리
