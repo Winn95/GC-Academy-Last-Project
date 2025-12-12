@@ -123,9 +123,13 @@ oauth2-public.yml : provider 정보, scope 등 공개 가능 설정
 
 ## 🔐 Git 관리 정책 요약
 파일	Git 관리
+
 application.yml	❌ (.gitignore)
+
 oauth2.yml	❌ (.gitignore)
+
 application-public.yml	⭕
+
 oauth2-public.yml	⭕
 
 ## 🚀 실행 방법
