@@ -92,33 +92,43 @@ Git에 포함
 공개 가능한 설정 관리
 
 text
-코드 복사
 - 서버 포트
 - JPA 설정
 - 로깅 레벨
+
 application.yml
 Git에 포함되지 않음
 
 민감 정보 관리
 
 text
-코드 복사
 - DB 비밀번호
 - JWT Secret Key
 - 외부 API Key
+
 🔑 OAuth2 설정 분리
+
 OAuth2 설정 역시 동일한 기준으로 분리하여 관리했습니다.
 
 ### oauth2.yml/ oauth2-public.yml (엔트리 포인트)
 yml
+
 코드 복사
+
 spring:
+
   config:
+  
     import:
+    
       - classpath:oauth2-public.yml
+      
       - optional:classpath:oauth2.yml
+      
 OAuth2 설정 파일 역할
+
 oauth2.yml : client-id, client-secret 등 민감 정보
+
 oauth2-public.yml : provider 정보, scope 등 공개 가능 설정
 
 ## 🔐 Git 관리 정책 요약
