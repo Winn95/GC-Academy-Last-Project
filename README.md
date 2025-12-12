@@ -136,15 +136,22 @@ oauth2-public.yml	⭕
 
 ### Backend
 bash
+
 코드 복사
+
 cd backendspring
+
 ./gradlew bootRun
 
 ### Frontend
 bash
+
 코드 복사
+
 cd vite-front
+
 npm install
+
 npm run dev
 
 ## 🎯 설계 포인트 요약
