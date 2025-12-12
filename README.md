@@ -115,8 +115,8 @@ spring:
 파일	Git 관리
 
 gitIgnore 처리 (민감정보 다수 포함)
-application-secret.yml
-oauth2-secret.yml
+application.yml
+oauth2.yml
 
 gitIgnore 처리안함 (yml 틀)
 application-public.yml
