@@ -82,7 +82,7 @@ spring:
   config:
     import:
       - classpath:application-public.yml
-      - optional:classpath:application-secret.yml
+      - optional:classpath:application.yml
 application-public.yml
 Git에 포함
 
@@ -110,7 +110,7 @@ spring:
   config:
     import:
       - classpath:oauth2-public.yml
-      - optional:classpath:oauth2-secret.yml
+      - optional:classpath:oauth2.yml
 🔐 Git 관리 정책 요약
 파일	Git 관리
 
