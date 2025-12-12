@@ -1,0 +1,91 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        jdbc.time_zone: Asia/Seoul
+
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+
+  logging:
+    level:
+      org.hibernate.SQL: debug
+      org.springframework.security: debug
+
+  profiles:
+    include:
+      - oauth2
+
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2
+        auto: false
+      credentials:
+        access-key: ${AWS_ACCESS_KEY}
+        secret-key: ${AWS_SECRET_KEY}
+      s3:
+        bucket: ${AWS_S3_BUCKET}
+      stack:
+        auto: false
+
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+    exchange:
+      name: running.main.exchange
+    crew:
+      exchange: crew.exchange
+      queue: crew.queue
+
+file:
+  upload-dir: ${LOCAL_UPLOAD_DIR:file:/uploads}
+
+s3file:
+  path:
+    member: member/
+    crew: crew/
+    board: board/
+    item: item/
+
+kakao:
+  admin-key: ${KAKAO_ADMIN_KEY}
+  api-url: https://kapi.kakao.com/v1/payment/ready
+  approval-url: ${KAKAO_APPROVAL_URL}
+  cancel-url: ${KAKAO_CANCEL_URL}
+  fail-url: ${KAKAO_FAIL_URL}
+  map:
+    appkey: ${KAKAO_MAP_APPKEY}
+
+open:
+  openWeatherMap:
+    serviceKey: ${OPENWEATHER_API_KEY}
+
+marathon:
+  api:
+    key: ${MARATHON_API_KEY}
+
+security:
+  jwt:
+    key: ${JWT_SECRET}

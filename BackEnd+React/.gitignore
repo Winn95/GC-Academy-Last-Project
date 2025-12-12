@@ -1,0 +1,74 @@
+################################
+# Common
+################################
+HELP.md
+.DS_Store
+.env
+
+################################
+# YML 정책 (Public / Secret)
+################################
+# 기본적으로 모든 yml 무시
+**/*.yml
+
+# public 설정은 커밋 허용
+!**/*-public.yml
+!**/application-public.yml
+!**/oauth2-public.yml
+
+# secret 설정은 절대 커밋 금지
+**/*-secret.yml
+**/application-secret.yml
+**/oauth2-secret.yml
+
+################################
+# Gradle / Backend
+################################
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+################################
+# Spring / IDE
+################################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+################################
+# IntelliJ
+################################
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+################################
+# Frontend / Node / Vite
+################################
+node_modules/
+dist/
+**/.vite/
+
+################################
+# VS Code
+################################
+.vscode/
+
+################################
+# Project specific
+################################
+**/commonApis.jsx
