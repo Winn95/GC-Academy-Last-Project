@@ -11,42 +11,13 @@ RunningCrew Project는
 
 본 프로젝트는 기능 구현뿐 아니라 실무 환경을 고려한 설정 분리, 보안 설계, 협업을 위한 Git 관리를 목표로 설계되었습니다.
 
-🛠 기술 스택
+🛠 Tech Stack (Tools)
 Backend
-
-Java 17
-
-Spring Boot 3.x
-
-Spring Security
-
-OAuth2
-
-JPA (Hibernate)
-
-MySQL
-
-Gradle
-
+<p align="left"> <img src="https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F?logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/OAuth2-000000?logo=auth0&logoColor=white"/> <img src="https://img.shields.io/badge/JPA-Hibernate-59666C?logo=hibernate&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white"/> </p>
 Frontend
-
-React (Vite)
-
-JavaScript (ES6+)
-
-Axios
-
-CSS
-
+<p align="left"> <img src="https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white"/> </p>
 Infra / DevOps
-
-AWS (EC2, RDS, S3)
-
-Docker
-
-Nginx
-
-Git / GitHub
+<p align="left"> <img src="https://img.shields.io/badge/AWS-EC2/RDS/S3-232F3E?logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white"/> <img src="https://img.shields.io/badge/Git-GitHub-F05032?logo=git&logoColor=white"/> </p>
 
 📁 프로젝트 구조
 RunningCrew Project
