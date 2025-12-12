@@ -91,7 +91,7 @@ Git에 포함
 
 공개 가능한 설정 관리
 
-text
+
 - 서버 포트
 - JPA 설정
 - 로깅 레벨
@@ -101,7 +101,7 @@ Git에 포함되지 않음
 
 민감 정보 관리
 
-text
+
 - DB 비밀번호
 - JWT Secret Key
 - 외부 API Key
